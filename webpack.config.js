@@ -50,6 +50,13 @@ module.exports = env => {
                                                                 'css-loader',
                                                                 'sass-loader'
                    ]
+               },
+               //url loader
+               {
+                   test:  /\.(jpg|jpeg|gif|png)$/,
+                   use:{
+                       loader: 'url-loader'
+                   }
                }
             ]
         },
