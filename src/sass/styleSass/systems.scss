@@ -1,0 +1,25 @@
+.container-systems{
+    width: 60%;
+    margin: 80px auto;
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    ul{
+        margin-bottom: 30px;
+        .information-system{
+            font-size: 1.3em;
+            b{
+                font-size: .8em;
+            }
+            span{
+                font-size: 1.2em;
+            }
+            p{
+                margin-bottom: 17px;
+                font-size: .8em;
+            }
+        }
+
+    }
+}

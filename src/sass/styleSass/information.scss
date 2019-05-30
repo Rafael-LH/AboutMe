@@ -1,0 +1,7 @@
+.container-about-me{
+    width: 350px;
+    @include box-shadow(0px, 0px, 6px, 1px);
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}

@@ -9,10 +9,10 @@ import fondoNav from '../images/fondo.jpg'
                  <div className="items-nav">  
                     <Link to='/' className="name">Rafael Lopez</Link>
                     <ul className='items-li'>
-                        <li> <a href="">Experience</a> </li>
-                        <li> <a href="">Skills</a> </li>
-                        <li> <a href="">Systems</a> </li>
-                        <li> <a className="end" href="">Information</a> </li>
+                        <li> <a href="#experience">Experience</a> </li>
+                        <li> <a href="#skills">Skills</a> </li>
+                        <li> <a href="#systems">Systems</a> </li>
+                        <li> <a href="#information" className="end">Information</a> </li>
                     </ul>
                  </div>
                  <section className="container-information">
