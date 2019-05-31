@@ -1,5 +1,4 @@
 import React,{Component, Fragment} from 'react'
-import {Link} from 'react-router-dom'
 import fondoNav from '../images/fondo.jpg'
 
     const Nav = () =>(
@@ -7,7 +6,7 @@ import fondoNav from '../images/fondo.jpg'
             <div className='container-nav'>
                 <img className='img-nav' src={fondoNav}/>
                  <div className="items-nav">  
-                    <Link to='/' className="name">Rafael Lopez</Link>
+                    <a href='#' className="name">Rafael Lopez</a>
                     <ul className='items-li'>
                         <li> <a href="#experience">Experience</a> </li>
                         <li> <a href="#skills">Skills</a> </li>

@@ -1,18 +1,18 @@
 import React,{Component} from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import Home from '../pages/Home.js'
+/* import {BrowserRouter, Switch, Route} from 'react-router-dom' */
 import Layout from './Layout.js'
-import PageError from './PageError.js'
+import Skills from './Skills'
+import Experience from './Experience'
+import SystemsContainer from './SystemsContainer'
+import Information from './Information'
 
    const App = () => (
-         <BrowserRouter>
-                    <Layout>
-                       <Switch>
-                          <Route exact path='/' component={Home} />
-                          <Route component={PageError} />
-                       </Switch>
-                    </Layout>
-          </BrowserRouter>   
+               <Layout>
+                    <Experience />
+                    <Skills />
+                    <SystemsContainer />
+                    <Information />
+               </Layout>
    )
 
    export default App
