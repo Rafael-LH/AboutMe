@@ -1,15 +1,15 @@
 import React,{Component} from 'react'
 
- const NavResponsive = () => (
+ const NavResponsive = props => (
        <div className="responsive">
              <ul className='items-li-responsive'>
                  <li> <a href='#' className="title-name">Rafael Lopez</a> </li>
                  <li> <a href="#experience">Experience</a> </li>
-                <li> <a href="#skills">Skills</a> </li>
-             <li> <a href="#systems">Systems</a> </li>
-               <li> <a href="#information" className="end">Information</a> </li>
+                 <li> <a href="#skills">Skills</a> </li>
+                 <li> <a href="#systems">Systems</a> </li>
+                 <li> <a href="#information" className="end">Information</a> </li>
              </ul>
-             <p className="btn-menu">menu</p>
+             <p className="btn-menu" onClick={props.onClick}>menu</p>
        </div>
  )
 
