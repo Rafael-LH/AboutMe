@@ -1,15 +1,16 @@
 import React,{Component} from 'react'
+import avatar from '../images/avatar.jpg'
 
     const Information = () => (
          <div className="container-about-me" id="information">
-             <img src="" alt=""/>
-             <ul>
-                 <li><b>First name</b> Rafael Iskoat</li>
-                 <li><b>Last name</b> Lopez herrera</li>
-                 <li><b>Phone</b></li>
-                 <li><b>Cel phone</b> 33 35 96 09 55</li>
-                 <li><b>Addres</b> Fraccionamiendo las gabrielas nube 58 tonala</li>
-                 <li><b>Language</b> Espanish (native) English (in proces)</li>
+             <img src={avatar} alt=""/>
+             <ul className="container-list-information">
+                 <li>First name: Rafael Iskoat</li>
+                 <li>Last name: Lopez herrera</li>
+                 <li>Phone: </li>
+                 <li>Cel phone: 33 35 96 09 55</li>
+                 <li>Addres: Fraccionamiendo las gabrielas nube 58 tonala</li>
+                 <li>Language: Espanish (native) English (in proces)</li>
              </ul>
          </div>
     )

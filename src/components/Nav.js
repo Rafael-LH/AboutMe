@@ -1,5 +1,6 @@
 import React,{Component, Fragment} from 'react'
 import fondoNav from '../images/fondo.jpg'
+import NavResponsive from './NavResponsive'
 
     const Nav = () =>(
         <Fragment>
@@ -14,6 +15,7 @@ import fondoNav from '../images/fondo.jpg'
                         <li> <a href="#information" className="end">Information</a> </li>
                     </ul>
                  </div>
+                 <NavResponsive />
                  <section className="container-information">
                      <article className="information">
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam unde blanditiis

@@ -21,7 +21,7 @@ import React,{Component} from 'react'
                 </ul>
             </div>
             <div className="down-section">
-                 <p>About me, Todos los derechos © Rafael Lòpez 2019</p>
+                 <p>About me, All rights © Rafael Lòpez 2019</p>
             </div>
         </div>
     )

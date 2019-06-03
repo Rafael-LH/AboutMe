@@ -4,4 +4,19 @@
     margin: auto;
     padding: 20px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+        border-radius: 100px;
+        height: 180px;
+        width: 170px;
+        margin-bottom: 20px;
+    }
+    .container-list-information{
+        text-align: center;
+        li{
+            margin-bottom: 20px;
+        }
+    }
 }

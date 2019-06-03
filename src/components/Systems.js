@@ -5,29 +5,29 @@ const Systems = () =>(
     <h1>Systems</h1>
     <ul>
         <li className='information-system'>
-             <span>*</span><b>Sistema peritos</b>
+             <span>*</span><b>System peritos</b>
               <p>
-                  sistema para la gestion de peritos para renovacion, reincorporacion o primer ingreso
-                  proximos a ser peritos
+                  System for the management of pertios for renovation, reincorporation or first income, 
+                  next to be peritos
               </p>
         </li>
         <li className='information-system'>
-               <span>*</span><b>Sistema Gestión de correos</b>
+               <span>*</span><b>System management of emails</b>
             <p>
-                Sistema para la gestión de correos (altas y bajas)
-                de todos los juzgados
+                System for management of emails (high and low) 
+                of all the courts
            </p>
         </li>
         <li className='information-system'>
-               <span>*</span><b>Proyecto anticorrupción</b>
+               <span>*</span><b>Project anti corruption</b>
                <p>
-                 Declaración de bienes 
+                  Declaration of properties
                </p>
         </li>
         <li className='information-system'>
                <span>*</span><b>GitHub</b>
               <p>
-                 portafolio de proyectos en GitHub 
+                portfolio of projects in GitHub 
              </p>
          </li>
     </ul>                

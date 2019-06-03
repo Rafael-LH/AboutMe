@@ -4,9 +4,11 @@ import React,{Component} from 'react'
         <div className='container-experience' id="experience">
             <i className="fas fa-laptop-code"></i>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit eaque aspernatur in non.
-              Vel perferendis minima facilis saepe nesciunt at atque officia,
-              natus, ex asperiores labore, molestias veniam possimus nostrum?
+             In actuality work in the judiciary Council from 2018/04/1
+             to the present day as a web developer,
+             skilled in javascript and php demonstrated.
+             graduated in center university of tonalá,
+             student of english in imac 
              </p>
         </div>
     )
