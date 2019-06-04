@@ -82,9 +82,9 @@ export default class Nav extends Component{
                        <NavResponsive handleClickItem={this.handleClickItem} onClick={this.handleClickMenu} />
                        <section className="container-information">
                            <article className="information">
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam unde blanditiis
-                                 consequatur deleniti. Minima, illo! Eos illo, sequi,
-                                 voluptas repellendus quae cum dolorum qui architecto itaque amet tempore ratione?
+                           Dedicated and professional programmer, working under pressure, always looking for
+                           the code to be as optimal and reusable as possible, never giving up and persisting
+                           in finding the solution to any problem.
                            </article>
                        </section>
                   </div>
