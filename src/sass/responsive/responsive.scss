@@ -1,4 +1,4 @@
-$break-extra-small: 450px; /*<*/
+$break-extra-small: 400px; /*<*/
 $break-small:  670px; /*<*/
 $break-medium: 768px; /*<*/
 $break-large: 992px; /*>*/
@@ -8,7 +8,7 @@ $width-ul-a: 250px;
 
 @media screen and (max-width: $break-medium){
     .container-skills{
-        width: 90%;
+        width: 80%;
     }
     .container-systems{
         width: 75%;    
@@ -17,7 +17,7 @@ $width-ul-a: 250px;
 
  @media screen and (max-width: $break-small){
      .container-systems{
-         width: 90%;   
+         width: 85%;   
         }
         .container-others-systems{
             .container-card-systems{
@@ -30,6 +30,7 @@ $width-ul-a: 250px;
               color: #fff;
            }
        } 
+      
     }
 @media screen and (max-width: $break-extra-small){
     .container-about-me{
@@ -37,7 +38,16 @@ $width-ul-a: 250px;
     }
     .container-information{
          display: none;
-    }        
+    }  
+    .title-name-nav{
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+    }      
 } 
 @media screen and (max-width: 560px){
     .responsive{
@@ -96,5 +106,6 @@ $width-ul-a: 250px;
                  font-size: .9em;
              }
         }
+    
     }
 }

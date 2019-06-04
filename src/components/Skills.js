@@ -8,8 +8,8 @@ import React,{Component, Fragment} from 'react'
           </div>
  <div className="container-skills">
      <div className="container-backend">
-         <h2 className="title-backend">Backend</h2>
-         <ul className="items-backend">
+         <h2 className="title-backend-frontend">Backend</h2>
+         <ul className="items-backend-frontend">
             <li className='react'>PHP</li>
             <li className='html'>Laravel</li>
             <li className='react'>MVC</li>
@@ -20,8 +20,8 @@ import React,{Component, Fragment} from 'react'
          </ul>
      </div> 
      <div className="container-frontend">
-          <h2 className="title-frontend">Frontend</h2>
-          <ul className="items-frontend">
+          <h2 className="title-backend-frontend">Frontend</h2>
+          <ul className="items-backend-frontend">
               <li className='js'>Javascript</li>
               <li className='react'>ReactJS</li>
               <li className='js'>Webpack</li>

@@ -87,6 +87,9 @@ export default class Nav extends Component{
                            in finding the solution to any problem.
                            </article>
                        </section>
+                       <section className="title-name-nav">
+                            <p>Rafael Lopez</p>
+                       </section>
                   </div>
         )
     }
