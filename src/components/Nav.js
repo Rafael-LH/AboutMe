@@ -1,5 +1,5 @@
 import React,{Component, Fragment} from 'react'
-import fondoNav from '../images/fondo.jpg'
+import fondoNav from '../images/fondo6.jpg'
 import NavResponsive from './NavResponsive'
 
 export default class Nav extends Component{
@@ -88,7 +88,7 @@ export default class Nav extends Component{
                            </article>
                        </section>
                        <section className="title-name-nav">
-                            <p>Rafael Lopez</p>
+                            <p>Web developer</p>
                        </section>
                   </div>
         )

@@ -1,10 +1,26 @@
+$break-super-small: 320px; /*<*/
 $break-extra-small: 400px; /*<*/
+$break-extra-small-medium: 500px; /*<*/
 $break-small:  670px; /*<*/
 $break-medium: 768px; /*<*/
 $break-large: 992px; /*>*/
 $break-extra-large: 1200px; /*>*/
 $transition-menu: .4s;
 $width-ul-a: 250px; 
+
+@media screen and (max-width: $break-extra-large){
+    .img-nav{
+        height: 450px;
+    }
+}
+
+
+@media screen and (max-width: $break-large){
+    .img-nav{
+        height: 380px;
+    }
+    
+}
 
 @media screen and (max-width: $break-medium){
     .container-skills{
@@ -13,6 +29,17 @@ $width-ul-a: 250px;
     .container-systems{
         width: 75%;    
     }
+    .img-nav{
+        height: 360px;
+    }
+    .container-information{
+        .information{
+           font-size: .9em;
+           width: 50%;
+           color: #fff;
+        }
+    }
+ 
 }
 
  @media screen and (max-width: $break-small){
@@ -24,11 +51,8 @@ $width-ul-a: 250px;
                 width: 90%;
             }
         }
-       .container-information{
-           .information{
-              width: 50%;
-              color: #fff;
-           }
+       .img-nav{
+        height: 300px;
        } 
       
     }
@@ -44,12 +68,17 @@ $width-ul-a: 250px;
         color: #fff;
         position: absolute;
         top: 5px;
-        left: 5px;
-        font-size: 1.2em;
-        letter-spacing: 3px;
-    }      
+        left: 10px;
+        font-size: 1.1em;
+        letter-spacing: 2px;
+    }  
+       
 } 
+
 @media screen and (max-width: 560px){
+    .img-nav{
+        height: 290px;
+      } 
     .responsive{
        position: absolute;
        z-index: 5;
@@ -87,9 +116,11 @@ $width-ul-a: 250px;
         right: 0;
         top: 0;
         z-index: 10;
-        color: #26292c;
+        /* color: #26a69a; */
+        color: black;
         font-size: 1.7em;
-        margin: 7px 10px 0px 0px;
+        margin: 0px 10px 0px 0px;
+        font-weight: bolder;
         cursor: pointer;
         transition: ease .7s;           
     }
@@ -103,9 +134,21 @@ $width-ul-a: 250px;
                  color: #fff;
                 /*  color: rgb(87, 84, 84); */
                  width: 50%;
-                 font-size: .9em;
              }
         }
     
     }
+}
+
+@media screen and (max-width: $break-extra-small-medium){
+    .img-nav{
+        height: 240px;
+       } 
+     
+}
+@media screen and (max-width: $break-super-small){
+    .img-nav{
+        height: 180px;
+       }
+        
 }
