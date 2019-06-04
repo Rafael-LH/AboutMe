@@ -1,16 +1,18 @@
-import React,{Component} from 'react'
+import React,{Component,Fragment} from 'react'
 
  const NavResponsive = props => (
-       <div className="responsive">
-             <ul className='items-li-responsive'>
+       <Fragment>
+       <div className="responsive" id="responsive">
+             <ul className='items-li-responsive' id="items-li-responsive">
                  <li> <a href='#' className="title-name">Rafael Lopez</a> </li>
-                 <li> <a href="#experience">Experience</a> </li>
-                 <li> <a href="#skills">Skills</a> </li>
-                 <li> <a href="#systems">Systems</a> </li>
-                 <li> <a href="#information" className="end">Information</a> </li>
+                 <li> <a href="#experience" onClick={props.handleClickItem}>Experience</a> </li>
+                 <li> <a href="#skills" onClick={props.handleClickItem}>Skills</a> </li>
+                 <li> <a href="#systems" onClick={props.handleClickItem}>Systems</a> </li>
+                 <li> <a href="#information" className="end" onClick={props.handleClickItem}>Information</a> </li>
              </ul>
-             <p className="btn-menu" onClick={props.onClick}>menu</p>
        </div>
+      <p className="btn-menu" id="btn-menu" onClick={props.onClick}><i className="fas fa-arrow-left"></i></p>
+      </Fragment>
  )
 
  export default NavResponsive

@@ -4,7 +4,7 @@ $break-medium: 768px; /*<*/
 $break-large: 992px; /*>*/
 $break-extra-large: 1200px; /*>*/
 $transition-menu: .4s;
-
+$width-ul-a: 250px; 
 
 @media screen and (max-width: $break-medium){
     .container-skills{
@@ -29,38 +29,30 @@ $transition-menu: .4s;
     .container-about-me{
         width: 280px;
     }
+    .container-information{
+         display: none;
+    }        
 } 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 540px){
     .responsive{
-       display: block;
        position: absolute;
        z-index: 5;
        width: 100%;
-       border: 1px solid red;
        background: rgba(0, 0, 0,.7);
-       .btn-menu{
-           position: absolute;
-           right: 0;
-           top: 0;
-           z-index: 10;
-           color: #fff;
-           margin: 10px 20px 0px 0px;
-           cursor: pointer;
-       }
        .items-li-responsive{
            height: 100vh;
-           width: 200px;
+           width: $width-ul-a;
            background: #26292c;
            li{
                display: flex;
                flex-direction: column;
-               width: 200px;
                text-align: center;
                a{
                    color: #c7c1c1;
                    width: 100%;
                    padding: 15px 0px;
                    font-size: 1.2em;
+                   width: $width-ul-a;
                    transition: all $transition-menu; 
                    &:hover{
                        background: #1c1f22; 
@@ -73,9 +65,30 @@ $transition-menu: .4s;
            }
         }
     }
+    .btn-menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        color: #26292c;
+        font-size: 1.9em;
+        margin: 10px 20px 0px 0px;
+        cursor: pointer;
+        transition: ease 1s;           
+    }
     .container-nav{
         .items-nav{
             display: none;
+        }
+        .container-information{
+             top: 0px;
+             .information{
+                 color: #fff;
+                /*  color: rgb(87, 84, 84); */
+                 width: 50%;
+                 font-size: .9em;
+             }
         }
     }
 }

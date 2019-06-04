@@ -16,7 +16,7 @@ import React,{Component} from 'react'
                 </ul>
                 <h1 className="title-social">Networks</h1>
                 <ul>
-                    <li><a href="github.com/Rafael-LH">GitHub<i class="fab fa-github"></i></a></li>
+                    <li><a href="github.com/Rafael-LH">GitHub<i className="fab fa-github"></i></a></li>
                     <li><a href="https://github.com/Rafael-LH?tab=repositories">BitBucket<i className="fab fa-buysellads"></i> </a></li>
                 </ul>
             </div>
