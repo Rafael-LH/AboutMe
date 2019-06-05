@@ -72,6 +72,9 @@ $width-ul-a: 250px;
         font-size: 1.1em;
         letter-spacing: 2px;
     }  
+    .bout-me{
+        display: block;
+    }
        
 } 
 
@@ -143,8 +146,7 @@ $width-ul-a: 250px;
 @media screen and (max-width: $break-extra-small-medium){
     .img-nav{
         height: 240px;
-       } 
-     
+       }    
 }
 @media screen and (max-width: $break-super-small){
     .img-nav{

@@ -1,7 +1,7 @@
 import React,{Component,Fragment} from 'react'
 import OtherSystems from './OtherSystems'
 import Systems from './Systems'
-
+import Loading from '../components/Loading'
 
 export default class SystemsContainer extends Component {
     
@@ -42,7 +42,6 @@ export default class SystemsContainer extends Component {
                     showBtnReset: true
                 })
           }
-            console.log(responseJson)
             
             this.setState({
                 data: responseJson,
@@ -94,7 +93,7 @@ export default class SystemsContainer extends Component {
             <div className="container-more-projects">
             {
                 this.state.loading &&
-                <p>Cargando...</p>
+                <Loading />
             }
              {
                  this.state.btnMore &&
