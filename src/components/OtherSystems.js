@@ -9,7 +9,7 @@ import React,{Component} from 'react'
                    {props.description} 
                </p>
                <div className="container-btn-show">
-                  <a target="__blank" className='btn-show-repo' href={props.svn_url}>View</a>
+                  <a target="__blank" className='btn-show-repo' href={props.svn_url}>Ver</a>
                </div>
             </div>
     )

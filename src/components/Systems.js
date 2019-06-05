@@ -2,32 +2,32 @@ import React,{Component} from 'react'
   
 const Systems = () =>(
     <div className='container-systems' id='systems'>
-    <h1>Systems</h1>
+    <h1>Sistemas</h1>
     <ul>
         <li className='information-system'>
-             <span>*</span><b>System peritos</b>
+             <span>*</span><b>Sistema Peritos</b>
               <p>
-                  System for the management of pertios for renovation, reincorporation or first income, 
-                  next to be peritos
+               Sistema para la gestión de peritos consejo de la judicatura 
+               (ciudad judicial) jefe de departamento de informática Enrique Hoyos 
               </p>
         </li>
         <li className='information-system'>
-               <span>*</span><b>System management of emails</b>
+               <span>*</span><b>Sistema Gestión de correos </b>
             <p>
-                System for management of emails (high and low) 
-                of all the courts
+              Sistema para la gestión de correos (altas y bajas)
+         	  de todos los juzgados
            </p>
         </li>
         <li className='information-system'>
-               <span>*</span><b>Project anti corruption</b>
+               <span>*</span><b>Proyecto anticorrupción </b>
                <p>
-                  Declaration of properties
+                  Declaración de bienes
                </p>
         </li>
         <li className='information-system'>
                <span>*</span><b>GitHub</b>
               <p>
-                portfolio of projects in GitHub 
+                Portafolio de proyectos en GitHub 
              </p>
          </li>
     </ul>                

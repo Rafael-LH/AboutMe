@@ -2,22 +2,20 @@ import React,{Component, Fragment} from 'react'
   
     const Experience = () => (
         <Fragment>
-             <div className='container-experience' id="experience">
+             <div className='container-experience dev' id="experience">
                  <i className="fas fa-laptop-code"></i>
                  <p>
-                  In actuality work in the judiciary Council from 2018/04/1
-                  to the present day as a web developer,
-                  skilled in javascript and php demonstrated.
-                  graduated in center university of tonalá,
-                  student of english in imac 
+                    En la actualidad trabajo en el Consejo de la Judicatura desde 1 de abril
+                    del 2018 hasta el día de hoy como desarrollador web, con experiencia en javascript y php demostrado.
+                    Graduado en el centro universitario de tonalá, estudiante de inglés en imac. 
                   </p>
              </div>
              <div className='container-experience bout-me' id="experience">
                 <i className="fas fa-user-tie"></i>
                 <p>
-                     Dedicated and professional programmer, working under pressure,
-                     always looking for the code to be as optimal and reusable as possible,
-                     never giving up and persisting in finding the solution to any problem. 
+                   Programador dedicado y profesional, trabajar bajo presión,
+                   siempre buscando que el código quede lo más óptimo y reutilizable posible,
+                   nunca rendirse y persistir a encontrar la solución ante cualquier problema 
                  </p>
              </div>
          </Fragment>    

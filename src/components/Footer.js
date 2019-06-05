@@ -3,7 +3,7 @@ import React,{Component} from 'react'
     const Footer = () => (
         <div className="footer">
             <div className="sub-section-footer">
-                <h1 className="title-social">Technologies</h1>
+                <h1 className="title-social">Tecnologías</h1>
                 <ul>
                     <li>HTML 5</li>
                     <li>Sass</li>
@@ -21,7 +21,7 @@ import React,{Component} from 'react'
                 </ul>
             </div>
             <div className="down-section">
-                 <p>About me, All rights © Rafael Lòpez 2019</p>
+                 <p>About me, Todos los derechos © Rafael Lòpez 2019</p>
             </div>
         </div>
     )

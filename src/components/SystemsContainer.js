@@ -80,7 +80,7 @@ export default class SystemsContainer extends Component {
         return(
           <Fragment>  
             <Systems /> 
-           <h1 className="other-systems">Others Systems</h1>
+           <h1 className="other-systems">Otros Sistemas</h1>
            <div className="container-others-systems">
              {
                  this.state.data.map( items =>{
@@ -97,11 +97,11 @@ export default class SystemsContainer extends Component {
             }
              {
                  this.state.btnMore &&
-                 <span className="btn-more-projects" onClick={() => this.fetchData() }>More</span>
+                 <span className="btn-more-projects" onClick={() => this.fetchData() }>Mas</span>
                 }
              {
                  this.state.showBtnReset &&
-                 <span className="btn-more-projects-reset" onClick={() => this.resetRepos()}>Reset</span>
+                 <span className="btn-more-projects-reset" onClick={() => this.resetRepos()}>Resetear</span>
              }
             </div>
 
