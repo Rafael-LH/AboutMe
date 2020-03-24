@@ -97,7 +97,7 @@ export default class SystemsContainer extends Component {
             }
              {
                  this.state.btnMore &&
-                 <span className="btn-more-projects" onClick={() => this.fetchData() }>Mas</span>
+                 <span className="btn-more-projects" onClick={() => this.fetchData() }>Más</span>
                 }
              {
                  this.state.showBtnReset &&
