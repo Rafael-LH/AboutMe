@@ -91,9 +91,6 @@ export default class Nav extends Component{
                            nunca rendirse y persistir a encontrar la solución ante cualquier problema
                            </article>
                        </section> */}
-                       <section className="title-name-nav">
-                            <p>Web developer</p>
-                       </section>
                   </div>
         )
     }
