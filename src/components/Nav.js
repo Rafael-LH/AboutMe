@@ -1,5 +1,5 @@
 import React,{Component, Fragment} from 'react'
-import fondoNav from '../images/fondo6.jpg'
+import fondoNav from '../images/fondo2.jpg'
 import NavResponsive from './NavResponsive'
 
 export default class Nav extends Component{
@@ -72,9 +72,9 @@ export default class Nav extends Component{
                           </ul>
                        </div>
                        <div className='container-image'>
-                            <div className='img-nav'>
-                              
-                            </div>
+                            <img className='img-nav' src={fondoNav} alt="Image" />
+                            {/* <div className='img-nav' >
+                            </div> */}
                            <div className='container-image--overlay'>
                               <div className='container-image--branch'>
                                 <h1>Front-end</h1>
