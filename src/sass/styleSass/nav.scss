@@ -1,25 +1,61 @@
 $transition: .8s;
-$color-border: black;
+$color-item: #777;
 
 .container-nav{
-    display: flex;
+    background-color: #f8f8f8;
     .items-nav{
-        margin-top: 12px;
-        width: 100%;
+        max-width: 1090px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
-        position: absolute;
+        background-color: #f8f8f8;
+        padding: 10px;
     }
     .name{
-        color: #fff;
+        color: $color-item;
         font-size: 1.1em;
         margin-left: 10px;
+        transition: ease .5s;
+        &:hover{
+          color: black; 
+          transition: ease .5s;
+        }
     }
 }
-.img-nav{
-    width: 100%;
-    height: 550px;
+.container-image{
     position: relative;
+    .img-nav{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('../images/fondo2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .container-image--overlay{
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container-image--branch{
+            margin-top: -20px;   
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f8f8f8; 
+            h1{
+                color: #f8f8f8;
+                font-size: 3.5em;
+                letter-spacing: 3px;
+            }
+        }
+    }
 }
 
 .items-li{
@@ -27,10 +63,15 @@ $color-border: black;
      li{
         a{
             font-size: 1.1em;
-            color: $color-border;
+            color: $color-item;
             padding: 5px 15px;
             cursor: pointer;
-            border-right: 1px solid $color-border;
+            border-right: 1px solid $color-item;
+            transition: ease .5s;
+            &:hover{
+               color: black; 
+               transition: ease .5s;
+            }
           }
           .end{
                border-right: none;
@@ -40,7 +81,6 @@ $color-border: black;
 
 .container-information{
     display: flex;
-    position: absolute;
     top: 45px;
     padding: 20px;
     .information{
@@ -51,6 +91,7 @@ $color-border: black;
 }
 .responsive{
     display: none;
+    position: absolute;
 }
 .items-li-responsive{
     margin-left: -100%;
@@ -59,12 +100,12 @@ $color-border: black;
 
 .btn-menu{
     display: none;
+    color: #fff;
 }
 
 .rotate-btn{
     transition: ease .7s;
     transform: rotate(180deg);
-    color: #fff !important;
 }
 
 .show-menu{
@@ -72,7 +113,7 @@ $color-border: black;
 }
 .show-items-menu{
     margin-left: 0%;
-    transition: all 1s;
+    transition: all .6s;
 }
 
 .bloquear-scroll{

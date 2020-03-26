@@ -85,8 +85,9 @@ $width-ul-a: 250px;
     .responsive{
        position: absolute;
        z-index: 5;
+       top: 0;
        width: 100%;
-       background: rgba(0, 0, 0,.7);
+       background: rgba(0, 0, 0,.1);
        .items-li-responsive{
            height: 100vh;
            width: $width-ul-a;
@@ -120,7 +121,6 @@ $width-ul-a: 250px;
         top: 0;
         z-index: 10;
         /* color: #26a69a; */
-        color: black;
         font-size: 1.7em;
         margin: 0px 10px 0px 0px;
         font-weight: bolder;
@@ -139,7 +139,16 @@ $width-ul-a: 250px;
                  width: 50%;
              }
         }
-    
+    }
+
+    .container-image{
+        .container-image--overlay{
+            .container-image--branch{
+                h1{
+                    font-size: 2.9em;
+                }
+            }
+        }
     }
 }
 

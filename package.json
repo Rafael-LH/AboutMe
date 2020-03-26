@@ -4,8 +4,8 @@
   "description": "My skills",
   "main": "index.js",
   "scripts": {
-    "build:dev": "webpack-dev-server --env.NODE_ENV=development",
-    "build:prod": "webpack -p -w --env.NODE_ENV=production"
+    "dev": "webpack-dev-server --env.NODE_ENV=development",
+    "prod": "webpack -p -w --env.NODE_ENV=production"
   },
   "repository": {
     "type": "git",

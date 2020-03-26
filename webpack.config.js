@@ -29,7 +29,6 @@ module.exports = env => {
         },
         module:{
             rules:[
-
                 // Js Loader
                 {
                    test: /\.(js|jsx)$/,
@@ -46,9 +45,7 @@ module.exports = env => {
                {
                    test: /\.scss$/,
                    use:[
-                        mod == 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
-                                                                'css-loader',
-                                                                'sass-loader'
+                        mod == 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,'css-loader','sass-loader'
                    ]
                },
                //url loader
