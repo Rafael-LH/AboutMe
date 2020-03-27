@@ -1,16 +1,16 @@
 import React,{Component, Fragment} from 'react'
   
     const Experience = () => (
-        <Fragment>
-             <div className='container-experience dev' id="experience">
+         <div className='container-experience'>
+             <div className='container-experience__section' id="experience">
                  <i className="fas fa-laptop-code"></i>
                  <p>
-                    En la actualidad trabajo en el Consejo de la Judicatura desde 1 de abril
-                    del 2018 hasta el día de hoy como desarrollador web, con experiencia en javascript y php demostrado.
+                    En la actualidad trabajo en Alta Gestión Municipal desde el primero de Junio del 2019
+                    hasta el día de hoy como Front-end Developer, con experiencia en javascript y ReactJS demostrado.
                     Graduado en el centro universitario de tonalá, estudiante de inglés en imac. 
                   </p>
              </div>
-             <div className='container-experience bout-me' id="experience">
+             <div className='container-experience__section'>
                 <i className="fas fa-user-tie"></i>
                 <p>
                    Programador dedicado y profesional, trabajar bajo presión,
@@ -18,7 +18,7 @@ import React,{Component, Fragment} from 'react'
                    nunca rendirse y persistir a encontrar la solución ante cualquier problema 
                  </p>
              </div>
-         </Fragment>    
+        </div>
     )
     
  

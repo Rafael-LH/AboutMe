@@ -1,5 +1,4 @@
 $break-super-small: 320px; /*<*/
-$break-extra-small: 400px; /*<*/
 $break-extra-small-medium: 500px; /*<*/
 $break-small:  670px; /*<*/
 $break-medium: 768px; /*<*/
@@ -56,18 +55,6 @@ $width-ul-a: 250px;
        } 
       
     }
-@media screen and (max-width: $break-extra-small){
-    .container-about-me{
-        width: 280px;
-    }
-    .container-information{
-         display: none;
-    }  
-    .bout-me{
-        display: block;
-    }
-       
-} 
 
 @media screen and (max-width: 560px){
     .img-nav{

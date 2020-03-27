@@ -14,19 +14,27 @@
 }
 
 .container-experience{
-    width: 250px;
-    margin: 70px auto 90px auto;
-    text-align: center;
-    p{
-        line-height: 25px;
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .container-experience__section{
+        width: 250px;
+        margin: 70px auto 50px;
+        text-align: center;
+        padding: 0px 30px;
+        p{
+            line-height: 25px;
+        }
+        i{
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .fa-user-tie{
+          font-size: 3.5em;
+        }   
     }
-    i{
-        font-size: 3em;
-        margin-bottom: 15px;
-    }
-}
-.dev{
-    width: 270px;
 }
 .container-title-skills{
         width: 100%;

@@ -9,7 +9,7 @@ import avatar from '../images/avatar.jpg'
                  <li>Apellidos: López herrera</li>
                  <li>Teléfono(Casa): 18 13 39 23</li>
                  <li>Celular: 33 35 96 09 55</li>
-                 <li>Dirección: Fraccionamiendo las gabrielas nube 58 tonala</li>
+                 <li>Correo: rafael.iskoat@gmail.com</li>
                  <li>Idiomas: Español(Nativo) Ingles(Básico)</li>
              </ul>
          </div>
