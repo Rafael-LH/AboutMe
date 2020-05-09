@@ -5,7 +5,7 @@ import React,{Component, Fragment} from 'react'
              <div className='container-experience__section' id="experience">
                  <i className="fas fa-laptop-code"></i>
                  <p>
-                    En la actualidad trabajo en Alta Gestión Municipal desde el primero de Junio del 2019
+                    En la actualidad trabajo en Qualitas desde el primero de Abril del 2020
                     hasta el día de hoy como Front-end Developer, con experiencia en javascript y ReactJS demostrado.
                     Graduado en el centro universitario de tonalá, estudiante de inglés en imac. 
                   </p>
