@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Layout from './Layout'
 import Skills from './Skills'
 import Experience from './Experience'

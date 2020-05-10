@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-
-const Systems = props => (
-
+const Systems = ({ name, description, svn_url }) => (
   <div className="container-card-systems">
-    <h1 className='title-system-git' >{props.name}</h1>
+    <h1 className='title-system-git' >{name}</h1>
     <p>
-      {props.description}
+      {description}
     </p>
     <div className="container-btn-show">
-      <a target="__blank" className='btn-show-repo' href={props.svn_url}>Ver</a>
+      <a target="__blank" className='btn-show-repo' href={svn_url}>Ver</a>
     </div>
   </div>
 )

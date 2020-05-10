@@ -1,32 +1,22 @@
-import React, { Component, Fragment } from 'react'
+import React, { useState } from 'react'
 import fondoNav from '../images/fondo2.jpg'
 import NavResponsive from './NavResponsive'
 
-export default class Nav extends Component {
+const Nav = () => {
+  const [showMenu, setShowMenu] = useState(false);
 
-  state = {
-    showMenu: false
-  }
-
-  hideMenuResponsive = (timmer, showMenu, showItemsMenu, rotateBtn, scroll) => {
-
-    this.setState({
-      showMenu: false
-    })
-
+  const hideMenuResponsive = (timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll) => {
     scroll.classList.remove('bloquear-scroll')
     setTimeout(() => {
-      showMenu.classList.remove('show-menu')
+      showMenuResposive.classList.remove('show-menu')
     }, timmer + 400)
     rotateBtn.classList.remove('rotate-btn')
     showItemsMenu.classList.remove('show-items-menu')
   }
-  showMenuResponsive = (timmer, showMenu, showItemsMenu, rotateBtn, scroll) => {
-    this.setState({
-      showMenu: true
-    })
+  const showMenuResponsive = (timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll) => {
+    setShowMenu(true)
     scroll.classList.add('bloquear-scroll')
-    showMenu.classList.add('show-menu')
+    showMenuResposive.classList.add('show-menu')
     rotateBtn.classList.add('rotate-btn')
 
     setTimeout(() => {
@@ -34,64 +24,61 @@ export default class Nav extends Component {
     }, timmer)
   }
 
-  handleClickMenu = e => {
+  const handleClickMenu = e => {
     let timmer = 10;
-    let showMenu = document.getElementById('responsive')
+    let showMenuResposive = document.getElementById('responsive')
     let showItemsMenu = document.getElementById('items-li-responsive')
     let rotateBtn = document.getElementById('btn-menu')
     let scroll = document.getElementsByTagName('html')[0]
 
-    if (!this.state.showMenu) {
-      this.showMenuResponsive(timmer, showMenu, showItemsMenu, rotateBtn, scroll)
+    if (!showMenu) {
+      showMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
     } else {
-      this.hideMenuResponsive(timmer, showMenu, showItemsMenu, rotateBtn, scroll)
+      hideMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
     }
   }
 
-  handleClickItem = (e) => {
-
+  const handleClickItem = (e) => {
     let timmer = -400;
-    let showMenu = document.getElementById('responsive')
+    let showMenuResposive = document.getElementById('responsive')
     let showItemsMenu = document.getElementById('items-li-responsive')
     let rotateBtn = document.getElementById('btn-menu')
     let scroll = document.getElementsByTagName('html')[0]
-
-    this.hideMenuResponsive(timmer, showMenu, showItemsMenu, rotateBtn, scroll)
+    hideMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
   }
 
-  render() {
-    return (
-      <div className='container-nav' id="container-nav">
-        <div className="items-nav">
-          <a href='#' className="name">Rafael Lopez</a>
-          <ul className='items-li'>
-            <li> <a href="#experience">Experiencia</a> </li>
-            <li> <a href="#skills" >Skills</a> </li>
-            <li> <a href="#systems">Sistemas</a> </li>
-            <li> <a href="#information" className="end">Información</a> </li>
-          </ul>
-        </div>
-        <div className='container-image'>
-          <img className='img-nav' src={fondoNav} alt="Image" />
-          {/* <div className='img-nav' >
+  return (
+    <div className='container-nav' id="container-nav">
+      <div className="items-nav">
+        <a href='#' className="name">Rafael Lopez</a>
+        <ul className='items-li'>
+          <li> <a href="#experience">Experiencia</a> </li>
+          <li> <a href="#skills" >Skills</a> </li>
+          <li> <a href="#systems">Sistemas</a> </li>
+          <li> <a href="#information" className="end">Información</a> </li>
+        </ul>
+      </div>
+      <div className='container-image'>
+        <img className='img-nav' src={fondoNav} alt="Image" />
+        {/* <div className='img-nav' >
                             </div> */}
-          <div className='container-image--overlay'>
-            <div className='container-image--branch'>
-              <h1>Front-end</h1>
-              <h1>Development</h1>
-            </div>
+        <div className='container-image--overlay'>
+          <div className='container-image--branch'>
+            <h1>Front-end</h1>
+            <h1>Development</h1>
           </div>
         </div>
+      </div>
 
-        <NavResponsive handleClickItem={this.handleClickItem} onClick={this.handleClickMenu} />
-        {/* <section className="container-information">
+      <NavResponsive handleClickItem={handleClickItem} onClick={handleClickMenu} />
+      {/* <section className="container-information">
                            <article className="information">
                            Programador dedicado y profesional, trabajar bajo presión,
                            siempre buscando que el código quede lo más óptimo y reutilizable posible,
                            nunca rendirse y persistir a encontrar la solución ante cualquier problema
                            </article>
                        </section> */}
-      </div>
-    )
-  }
+    </div>
+  )
 }
+export default Nav

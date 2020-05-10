@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const Systems = () => (
   <div className='container-systems' id='systems'>
@@ -9,26 +9,26 @@ const Systems = () => (
         <p>
           Sistema para la gestión de peritos consejo de la judicatura
           (ciudad judicial) jefe de departamento de informática Enrique Hoyos
-              </p>
+        </p>
       </li>
       <li className='information-system'>
         <span>*</span><b>Sistema Gestión de correos </b>
         <p>
           Sistema para la gestión de correos (altas y bajas)
           de todos los juzgados
-           </p>
+        </p>
       </li>
       <li className='information-system'>
         <span>*</span><b>Proyecto anticorrupción </b>
         <p>
           Declaración de bienes
-               </p>
+        </p>
       </li>
       <li className='information-system'>
         <span>*</span><b>GitHub</b>
         <p>
           Portafolio de proyectos en GitHub
-             </p>
+        </p>
       </li>
     </ul>
   </div>
