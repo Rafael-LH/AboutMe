@@ -14,7 +14,7 @@ const Nav = () => {
     showItemsMenu.classList.remove('show-items-menu')
   }
   const showMenuResponsive = (timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll) => {
-    setShowMenu(true)
+    setShowMenu(true);
     scroll.classList.add('bloquear-scroll')
     showMenuResposive.classList.add('show-menu')
     rotateBtn.classList.add('rotate-btn')
@@ -34,6 +34,7 @@ const Nav = () => {
     if (!showMenu) {
       showMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
     } else {
+      setShowMenu(false);
       hideMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
     }
   }
@@ -60,8 +61,7 @@ const Nav = () => {
       </div>
       <div className='container-image'>
         <img className='img-nav' src={fondoNav} alt="Image" />
-        {/* <div className='img-nav' >
-                            </div> */}
+        {/* <div className='img-nav' > </div> */}
         <div className='container-image--overlay'>
           <div className='container-image--branch'>
             <h1>Front-end</h1>
