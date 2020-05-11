@@ -1,0 +1,84 @@
+{
+  "front": [
+    {
+      "class": "js",
+      "skill": "Javascript"
+    },
+    {
+      "class": "react",
+      "skill": "ReactJS"
+    },
+    {
+      "class": "react",
+      "skill": "Jquery"
+    },
+    {
+      "class": "html",
+      "skill": "HTML5"
+    },
+    {
+      "class": "js",
+      "skill": "Webpack"
+    },
+    {
+      "class": "npm",
+      "skill": "npm"
+    },
+    {
+      "class": "react",
+      "skill": "Css"
+    },
+    {
+      "class": "sass",
+      "skill": "Sass"
+    },
+    {
+      "class": "materialize",
+      "skill": "Materialize"
+    },
+    {
+      "class": "bootstrap",
+      "skill": "Bootstrap"
+    },
+    {
+      "class": "html",
+      "skill": "PostCSS"
+    }
+  ],
+  "back": [
+    {
+      "class": "react",
+      "skill": "PHP"
+    },
+    {
+      "class": "js",
+      "skill": "NodeJS"
+    },
+    {
+      "class": "html",
+      "skill": "Composer"
+    },
+    {
+      "class": "react",
+      "skill": "MVC"
+    },
+    {
+      "class": "sass",
+      "skill": "POO"
+    },
+    {
+      "class": "react",
+      "skill": "MySql"
+    },
+    {
+      "class": "react",
+      "skill": "Ajax"
+    }
+  ],
+  "methodology": [
+    {
+      "class": "react",
+      "skill": "Scrum"
+    }
+  ]
+}
