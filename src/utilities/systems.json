@@ -1,0 +1,20 @@
+{
+  "systems": [
+    {
+      "title": "Sistema Peritos",
+      "description": " Sistema para la gestión de peritos consejo de la judicatura (ciudad judicial) jefe de departamento de informática Enrique Hoyos"
+    },
+    {
+      "title": "Sistema Gestión de correos",
+      "description": "Sistema para la gestión de correos (altas y bajas) de todos los juzgados"
+    },
+    {
+      "title": "Proyecto anticorrupción",
+      "description": "Declaración de bienes"
+    },
+    {
+      "title": "GitHub",
+      "description": "Portafolio de proyectos en GitHub"
+    }
+  ]
+}

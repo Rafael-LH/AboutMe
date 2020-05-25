@@ -9,6 +9,10 @@
       "skill": "ReactJS"
     },
     {
+      "class": "redux",
+      "skill": "Redux"
+    },
+    {
       "class": "react",
       "skill": "Jquery"
     },
@@ -33,16 +37,16 @@
       "skill": "Sass"
     },
     {
+      "class": "html",
+      "skill": "PostCSS"
+    },
+    {
       "class": "materialize",
       "skill": "Materialize"
     },
     {
       "class": "bootstrap",
       "skill": "Bootstrap"
-    },
-    {
-      "class": "html",
-      "skill": "PostCSS"
     }
   ],
   "back": [

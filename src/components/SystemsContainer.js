@@ -56,9 +56,6 @@ const SystemsContainer = () => {
 
   return (
     <>
-      {
-        error && <ErrorComponent message={messageErr} />
-      }
       <Systems />
       <h1 className="other-systems">Otros Sistemas</h1>
       <div className="container-others-systems">
@@ -77,6 +74,9 @@ const SystemsContainer = () => {
           showBtnReset && <span className="btn-more-projects-reset" onClick={() => resetRepos()}>Mostrar Menos</span>
         }
       </div>
+      {
+        error && <ErrorComponent message={messageErr} />
+      }
     </>
   )
 }
