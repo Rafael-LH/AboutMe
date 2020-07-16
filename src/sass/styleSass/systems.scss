@@ -7,6 +7,8 @@ h1{
 }
 ul{
   margin-bottom: 30px;
+  max-height: 300px;
+  overflow: scroll;
   .information-system{
       font-size: 1.3em;
       b{

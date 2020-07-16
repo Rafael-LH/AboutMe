@@ -1,14 +1,11 @@
 import React from 'react'
-
+const technologies = ['HTML 5', 'Sass', 'Webpack', 'ReactJS', 'Hooks'];
 const Footer = () => (
   <div className="footer">
     <div className="sub-section-footer">
       <h1 className="title-social">Tecnologías</h1>
       <ul>
-        <li>HTML 5</li>
-        <li>Sass</li>
-        <li>Webpack</li>
-        <li>ReactJS</li>
+        {technologies.map((item, index) => <li key={index}>{item}</li>)}
       </ul>
       <h1 className="title-social">Api</h1>
       <ul>

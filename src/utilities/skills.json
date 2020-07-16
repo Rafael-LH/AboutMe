@@ -37,10 +37,6 @@
       "skill": "Sass"
     },
     {
-      "class": "html",
-      "skill": "PostCSS"
-    },
-    {
       "class": "materialize",
       "skill": "Materialize"
     },
@@ -51,12 +47,12 @@
   ],
   "back": [
     {
-      "class": "react",
-      "skill": "PHP"
+      "class": "js",
+      "skill": "NodeJS"
     },
     {
       "class": "js",
-      "skill": "NodeJS"
+      "skill": "Express"
     },
     {
       "class": "html",

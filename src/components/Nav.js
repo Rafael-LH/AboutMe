@@ -30,7 +30,6 @@ const Nav = () => {
     let showItemsMenu = document.getElementById('items-li-responsive')
     let rotateBtn = document.getElementById('btn-menu')
     let scroll = document.getElementsByTagName('html')[0]
-
     if (!showMenu) {
       showMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
     } else {
@@ -45,6 +44,7 @@ const Nav = () => {
     let showItemsMenu = document.getElementById('items-li-responsive')
     let rotateBtn = document.getElementById('btn-menu')
     let scroll = document.getElementsByTagName('html')[0]
+    setShowMenu(false);
     hideMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
   }
 
