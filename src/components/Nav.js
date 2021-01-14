@@ -24,7 +24,7 @@ const Nav = () => {
     }, timmer)
   }
 
-  const handleClickMenu = e => {
+  const handleClickMenu = _ => {
     let timmer = 10;
     let showMenuResposive = document.getElementById('responsive')
     let showItemsMenu = document.getElementById('items-li-responsive')
@@ -38,7 +38,7 @@ const Nav = () => {
     }
   }
 
-  const handleClickItem = (e) => {
+  const handleClickItem = (_) => {
     let timmer = -400;
     let showMenuResposive = document.getElementById('responsive')
     let showItemsMenu = document.getElementById('items-li-responsive')
@@ -53,10 +53,10 @@ const Nav = () => {
       <div className="items-nav">
         <a href='#' className="name">Rafael Lopez</a>
         <ul className='items-li'>
-          <li> <a href="#experience">Experiencia</a> </li>
+          <li> <a href="#experience">Experience</a> </li>
           <li> <a href="#skills" >Skills</a> </li>
-          <li> <a href="#systems">Sistemas</a> </li>
-          <li> <a href="#information" className="end">Información</a> </li>
+          <li> <a href="#systems">Systems</a> </li>
+          <li> <a href="#information" className="end">Information</a> </li>
         </ul>
       </div>
       <div className='container-image'>
@@ -64,8 +64,8 @@ const Nav = () => {
         {/* <div className='img-nav' > </div> */}
         <div className='container-image--overlay'>
           <div className='container-image--branch'>
-            <h1>Front-end</h1>
-            <h1>Development</h1>
+            <h1>FullStack</h1>
+            <h1>JavasCript</h1>
           </div>
         </div>
       </div>

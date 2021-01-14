@@ -22,7 +22,7 @@ const SystemsContainer = () => {
     try {
       let fetchData = await fetch(url);
       let fetchResponse = await fetchData.json();
-      let data = await `${fetchResponse.repos_url}?per_page=${numRep}`;
+      let data = `${fetchResponse.repos_url}?per_page=${numRep}`;
       let responseData = await fetch(data);
       let responseJson = await responseData.json();
 
@@ -57,7 +57,7 @@ const SystemsContainer = () => {
   return (
     <>
       <Systems />
-      <h1 className="other-systems">Otros Sistemas</h1>
+      <h1 className="other-systems">Personal projects and practices</h1>
       <div className="container-others-systems">
         {
           data.map(items => <OtherSystems key={items.id} {...items} />)
@@ -68,10 +68,10 @@ const SystemsContainer = () => {
           loading && <Loading />
         }
         {
-          btnMore && <span className="btn-more-projects" onClick={() => fetchData()}>Más</span>
+          btnMore && <span className="btn-more-projects" onClick={() => fetchData()}>More</span>
         }
         {
-          showBtnReset && <span className="btn-more-projects-reset" onClick={() => resetRepos()}>Mostrar Menos</span>
+          showBtnReset && <span className="btn-more-projects-reset" onClick={() => resetRepos()}>Show Less</span>
         }
       </div>
       {

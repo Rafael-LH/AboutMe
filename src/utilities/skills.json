@@ -1,83 +1,91 @@
 {
   "front": [
     {
-      "class": "js",
+      "class": "yellow",
       "skill": "Javascript"
     },
     {
-      "class": "react",
+      "class": "blue",
       "skill": "ReactJS"
     },
     {
-      "class": "redux",
+      "class": "lilac",
       "skill": "Redux"
     },
     {
-      "class": "react",
+      "class": "blue",
       "skill": "Jquery"
     },
     {
-      "class": "html",
+      "class": "red",
       "skill": "HTML5"
     },
     {
-      "class": "js",
+      "class": "yellow",
       "skill": "Webpack"
     },
     {
-      "class": "npm",
+      "class": "orange",
       "skill": "npm"
     },
     {
-      "class": "react",
+      "class": "blue",
       "skill": "Css"
     },
     {
-      "class": "sass",
+      "class": "pink",
       "skill": "Sass"
     },
     {
-      "class": "materialize",
+      "class": "coral",
       "skill": "Materialize"
     },
     {
-      "class": "bootstrap",
+      "class": "purple",
       "skill": "Bootstrap"
+    },
+    {
+      "class": "pink",
+      "skill": "Styled Components"
     }
   ],
   "back": [
     {
-      "class": "js",
+      "class": "yellow",
       "skill": "NodeJS"
     },
     {
-      "class": "js",
+      "class": "yellow",
       "skill": "Express"
     },
     {
-      "class": "html",
-      "skill": "Composer"
-    },
-    {
-      "class": "react",
+      "class": "blue",
       "skill": "MVC"
     },
     {
-      "class": "sass",
+      "class": "pink",
       "skill": "POO"
     },
     {
-      "class": "react",
+      "class": "blue",
       "skill": "MySql"
     },
     {
-      "class": "react",
-      "skill": "Ajax"
+      "class": "blue",
+      "skill": "API REST"
+    },
+    {
+      "class": "pink",
+      "skill": "GraphQL"
+    },
+    {
+      "class": "blue",
+      "skill": "Docker (docker-compose)"
     }
   ],
   "methodology": [
     {
-      "class": "react",
+      "class": "blue",
       "skill": "Scrum"
     }
   ]

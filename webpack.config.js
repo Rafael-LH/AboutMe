@@ -2,9 +2,9 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = env => {
-
+module.exports = (env, _) => {
   let mod = env.NODE_ENV;
+  console.log(mod);
   let plugins = []
 
   plugins.push(

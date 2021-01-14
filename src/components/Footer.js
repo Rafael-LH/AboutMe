@@ -3,7 +3,7 @@ const technologies = ['HTML 5', 'Sass', 'Webpack', 'ReactJS', 'Hooks'];
 const Footer = () => (
   <div className="footer">
     <div className="sub-section-footer">
-      <h1 className="title-social">Tecnologías</h1>
+      <h1 className="title-social">Technologies</h1>
       <ul>
         {technologies.map((item, index) => <li key={index}>{item}</li>)}
       </ul>
@@ -18,7 +18,7 @@ const Footer = () => (
       </ul>
     </div>
     <div className="down-section">
-      <p>About me, Todos los derechos © Rafael Lòpez 2019</p>
+      <p>About me, Todos los derechos © Rafael López 2018</p>
     </div>
   </div>
 )

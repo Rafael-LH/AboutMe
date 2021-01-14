@@ -1,28 +1,19 @@
 {
   "systems": [
     {
-      "title": "Sistema Peritos",
-      "description": " Sistema para la gestión de peritos consejo de la judicatura (ciudad judicial) jefe de departamento de informática Enrique Hoyos"
+      "title": "Judicatura Jalisco",
+      "date": "April first 2018 from June 25th 2019",
+      "description": "System for help process experts selections from Jalisco State"
     },
     {
-      "title": "Sistema Gestión de correos",
-      "description": "Sistema para la gestión de correos (altas y bajas) de todos los juzgados"
-    },
-    {
-      "title": "Proyecto anticorrupción",
-      "description": "Declaración de bienes"
-    },
-    {
-      "title": "AGM",
-      "description": "Desarrollos en distintos proyectos gubernamentales para los municipios de Tlaquepaque, Salvador Alvarado , Durango, Puerto Vallarta y Sinaloa"
+      "title": "Alta Gestión municipal",
+      "date": "June 26th 2019 from March 31th 2020",
+      "description": "Manage different states with projects that help them with documentation and management."
     },
     {
       "title": "Qualitas",
-      "description": "ERP Pérez Arteaga, desarrollo para los agentes y ejecutivas"
-    },
-    {
-      "title": "GitHub",
-      "description": "Portafolio de proyectos en GitHub"
+      "date": "April first 2020 - current job",
+      "description": "I am involved in system`s development to automation policy agents retention and management internal processes."
     }
   ]
 }

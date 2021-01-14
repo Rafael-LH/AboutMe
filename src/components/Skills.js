@@ -10,7 +10,7 @@ const Skills = () => (
     <div className="container-skills">
       <SkillsComponent className="frontend" title="Front-end" data={skillData.front} />
       <SkillsComponent className="backend" title="Back-end" data={skillData.back} />
-      <SkillsComponent className="backend" title="Metodología" data={skillData.methodology} />
+      <SkillsComponent className="backend" title="Methodology" data={skillData.methodology} />
     </div>
   </>
 )

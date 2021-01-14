@@ -5,12 +5,12 @@ const Information = () => (
   <div className="container-about-me" id="information">
     <img src={avatar} alt="" />
     <ul className="container-list-information">
-      <li>Nombres: Rafael Iskoat</li>
-      <li>Apellidos: López herrera</li>
-      <li>Teléfono: 18 13 39 23</li>
-      <li>Celular: 33 35 96 09 55</li>
-      <li>Correo: rafael.iskoat@gmail.com</li>
-      <li>Idiomas: Español(Nativo) Ingles(Básico)</li>
+      <li>Name: Rafael Iskoat</li>
+      <li>Last Name: López herrera</li>
+      <li>Telephone: 18 13 39 23</li>
+      <li>Cell Phone: 33 35 96 09 55</li>
+      <li>Email: rafael.iskoat@gmail.com</li>
+      <li>Languages: Español(Nativo) Ingles(Medio)</li>
     </ul>
   </div>
 )
