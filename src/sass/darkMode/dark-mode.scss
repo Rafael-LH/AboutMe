@@ -1,0 +1,41 @@
+$dark: #060a0e;
+$white: #fff;
+
+.dark-mode{
+  background-color: $dark;
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  span,
+  b,
+  li,
+  .fa-laptop-code,
+  .fa-user-tie{
+    color: $white;
+  }
+  .container-nav, .items-nav{
+    background-color: $dark;
+  }
+  .lds-grid div{
+    background-color: $white;
+  }
+  .btn-more-projects {
+    color: #babfc3;
+    border: 1px solid #494c4e;
+  }
+  .items-li{
+    li{
+      a{
+        &:hover{
+          color: white; 
+          transition: ease .5s;
+        }
+      }
+    }
+  }
+  .container-skills, .container-card-systems, .container-about-me{
+    @include box-shadow-dark-mode()
+  }
+}

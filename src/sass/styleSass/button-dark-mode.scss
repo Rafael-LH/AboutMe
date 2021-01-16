@@ -1,0 +1,77 @@
+
+.container_input_check {
+    label:before {
+    content: none;
+  }
+  .checkcross__input {
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+  .toggle-item {
+    width: 4em;
+    background: #2e394d;
+    height: 1.5em;
+    padding-bottom: 3px;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    transition: all .3s ease;
+    transform-origin: 20% center;
+    cursor: pointer;
+    &:before {
+      display: block;
+      transition: all .2s ease;
+      width: 1.5em;
+      height: 1.5em;
+      top: .25em;
+      left: .25em;
+      border-radius: 2em;
+      border: 2px solid #88cf8f;
+      transition: .3s ease;
+    }
+    .check {
+      border-radius: 50%;
+      width: 1.1em;
+      height: 1.1em;
+      position: absolute;
+      background: #c34a4a;
+      transition: .4s ease;
+      top: 4.5px;
+      left: 4.5px;
+      &:before, &:after {
+        height: 4px;
+        border-radius: 10px;
+        background: #fff;
+        transition: .4s ease;
+      }
+      &:before {
+        width: 25px;
+        transform: rotate(-45deg) translate(-6px, 20px);
+      }
+      &:after {
+        width: 10px;
+        transform: rotate(45deg) translate(20px, 11px);
+      }
+    }
+  }
+  #darkMode:checked + label {
+    .check {
+      left: 42px;
+      transform: rotate(360deg);
+      background: #8BC34A;
+      &:before {
+        width: 27px;
+        transform: rotate(-45deg) translate(-8px, 18px);
+      
+      }
+      &:after {
+        width: 27px;
+        transform: rotate(45deg) translate(18px, 8px);
+      }
+    }
+  }
+}

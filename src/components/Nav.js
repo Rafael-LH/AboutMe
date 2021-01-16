@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import fondoNav from '../images/fondo2.jpg'
 import NavResponsive from './NavResponsive'
+import useDrakLightMode from '../hooks/useDrakLightMode'
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { darkMode, handleChangeDarkLight } = useDrakLightMode()
 
   const hideMenuResponsive = (timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll) => {
     scroll.classList.remove('bloquear-scroll')
@@ -47,11 +49,16 @@ const Nav = () => {
     setShowMenu(false);
     hideMenuResponsive(timmer, showMenuResposive, showItemsMenu, rotateBtn, scroll)
   }
-
   return (
     <div className='container-nav' id="container-nav">
       <div className="items-nav">
         <a href='#' className="name">Rafael Lopez</a>
+        <div className="container_input_check">
+          <input id="darkMode" className="checkcross__input" type="checkbox" checked={darkMode} onChange={handleChangeDarkLight} />
+          <label className="toggle-item" htmlFor="darkMode">
+            <div className="check"></div>
+          </label>
+        </div>
         <ul className='items-li'>
           <li> <a href="#experience">Experience</a> </li>
           <li> <a href="#skills" >Skills</a> </li>
@@ -72,12 +79,12 @@ const Nav = () => {
 
       <NavResponsive handleClickItem={handleClickItem} onClick={handleClickMenu} />
       {/* <section className="container-information">
-                           <article className="information">
-                           Programador dedicado y profesional, trabajar bajo presión,
-                           siempre buscando que el código quede lo más óptimo y reutilizable posible,
-                           nunca rendirse y persistir a encontrar la solución ante cualquier problema
-                           </article>
-                       </section> */}
+          <article className="information">
+          Programador dedicado y profesional, trabajar bajo presión,
+          siempre buscando que el código quede lo más óptimo y reutilizable posible,
+          nunca rendirse y persistir a encontrar la solución ante cualquier problema
+          </article>
+      </section> */}
     </div>
   )
 }
