@@ -2,7 +2,7 @@ import React from 'react'
 import avatar from '../images/avatar.jpg'
 
 const Information = () => (
-  <div className="container-about-me" id="information">
+  <div className="container-about-me" id="contact">
     <img src={avatar} alt="" />
     <ul className="container-list-information">
       <li>Name: Rafael Iskoat</li>

@@ -18,7 +18,7 @@ const Footer = () => (
       </ul>
     </div>
     <div className="down-section">
-      <p>About me, Todos los derechos © Rafael López 2018</p>
+      <p>About me, copyright © Rafael López 2018</p>
     </div>
   </div>
 )

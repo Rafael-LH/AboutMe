@@ -1,96 +1,77 @@
 $break-super-small: 320px; /*<*/
-$break-extra-small-medium: 500px; /*<*/
+$break-extra-small: 500px; /*<*/
 $break-small:  670px; /*<*/
 $break-medium: 768px; /*<*/
 $break-large: 992px; /*>*/
 $break-extra-large: 1200px; /*>*/
+
 $transition-menu: .4s;
 $width-ul-a: 250px; 
 
 @media screen and (max-width: $break-extra-large){
-.img-nav{
-    height: 450px;
+	.img-nav{
+			height: 450px;
+	}
 }
-}
-
-
 @media screen and (max-width: $break-large){
-.img-nav{
-    height: 380px;
+	.img-nav{
+			height: 380px;
+	}
 }
-
-}
-
 @media screen and (max-width: $break-medium){
-.container-skills{
-    width: 80%;
+	.container-skills{
+			width: 80%;
+	}
+	.container-systems{
+			width: 75%;    
+	}
+	.img-nav{
+			height: 360px;
+	}
+	.container-information{
+			.information{
+					font-size: .9em;
+					width: 50%;
+					color: #fff;
+			}
+	}
 }
-.container-systems{
-    width: 75%;    
-}
-.img-nav{
-    height: 360px;
-}
-.container-information{
-    .information{
-        font-size: .9em;
-        width: 50%;
-        color: #fff;
-    }
-}
-
-}
-
 @media screen and (max-width: $break-small){
-  .container-systems{
-      width: 85%;   
-    }
-    .container-others-systems{
-        .container-card-systems{
-            width: 90%;
-        }
-    }
-    .img-nav{
-    height: 300px;
-    } 
-  
-}
-
-@media screen and (max-width: 560px){
-.img-nav{
+	// Navigation
+	.img-nav{
     height: 290px;
   } 
-.responsive{
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0,.1);
-    .items-li-responsive{
-        height: 100vh;
-        width: $width-ul-a;
-        background: #26292c;
-        li{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            a{
-                color: #c7c1c1;
-                width: 100%;
-                padding: 15px 0px;
-                font-size: 1.2em;
-                width: $width-ul-a;
-                transition: all $transition-menu; 
-                &:hover{
-                    background: #1c1f22; 
-                    transition: all $transition-menu; 
-            }
-          }
-        }
-        .title-name{
-            background: #1c1f22;
-        }
-    }
+	.responsive{
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		width: 100%;
+		background: rgba(0, 0, 0,.1);
+		.items-li-responsive{
+			height: 100vh;
+			width: $width-ul-a;
+			background: #26292c;
+			li{
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				a{
+					color: #c7c1c1;
+					width: 100%;
+					padding: 15px 0px;
+					font-size: 1.2em;
+					width: $width-ul-a;
+					transition: all $transition-menu; 
+					&:hover{
+						background: #1c1f22; 
+						transition: all $transition-menu; 
+				}
+			}
+		}
+		.title-name{
+			background: #1c1f22;
+		}
+	}
 }
 .btn-menu{
     display: block;
@@ -106,39 +87,59 @@ $width-ul-a: 250px;
     transition: ease .7s;           
 }
 .container-nav{
-    .items-nav{
-        display: none;
-    }
-    .container-information{
-          top: 0px;
-          .information{
-              color: #fff;
-            /*  color: rgb(87, 84, 84); */
-              width: 50%;
-          }
-    }
+	.items-nav{
+		padding: 0px;
+		.items-li, a{
+				display: none;
+		}
+	}
+	.container-information{
+			top: 0px;
+			.information{
+					color: #fff;
+			/*  color: rgb(87, 84, 84); */
+					width: 50%;
+			}
+	}
 }
-
+.container_input_check{
+	position: absolute;
+  top: 0;
+  margin: 13px 0px 0px 10px;
+  display: flex;
+	justify-content: space-between;
+	z-index: 2;
+}
 .container-image{
-    .container-image--overlay{
-        .container-image--branch{
-            margin-top: -50px;
-            h1{
-                font-size: 2.9em;
-            }
-        }
-    }
+	.container-image--overlay{
+		.container-image--branch{
+			margin-top: -50px;
+			h1{
+					font-size: 2.9em;
+			}
+		}
+	}
 }
+// Systems
+	.container-systems{
+		width: 85%;   
+		}
+	.container-others-systems{
+		.container-card-systems{
+				width: 90%;
+		}
+	}
+	.img-nav{
+		height: 300px;
+	} 
 }
-
-@media screen and (max-width: $break-extra-small-medium){
+@media screen and (max-width: $break-extra-small){
 .img-nav{
-    height: 240px;
-    }    
+	height: 240px;
+	}    
 }
 @media screen and (max-width: $break-super-small){
 .img-nav{
     height: 180px;
-    }
-    
+	}
 }

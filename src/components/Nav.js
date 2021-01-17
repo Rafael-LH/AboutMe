@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import fondoNav from '../images/fondo2.jpg'
 import NavResponsive from './NavResponsive'
 import useDrakLightMode from '../hooks/useDrakLightMode'
+import BtnDarkMode from './BtnDarkMode'
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -53,17 +54,15 @@ const Nav = () => {
     <div className='container-nav' id="container-nav">
       <div className="items-nav">
         <a href='#' className="name">Rafael Lopez</a>
-        <div className="container_input_check">
-          <input id="darkMode" className="checkcross__input" type="checkbox" checked={darkMode} onChange={handleChangeDarkLight} />
-          <label className="toggle-item" htmlFor="darkMode">
-            <div className="check"></div>
-          </label>
-        </div>
+        <BtnDarkMode
+          darkMode={darkMode}
+          handleChangeDarkLight={handleChangeDarkLight}
+        />
         <ul className='items-li'>
           <li> <a href="#experience">Experience</a> </li>
           <li> <a href="#skills" >Skills</a> </li>
-          <li> <a href="#systems">Systems</a> </li>
-          <li> <a href="#information" className="end">Information</a> </li>
+          <li> <a href="#information">Information</a> </li>
+          <li> <a href="#contact" className="end">Contact</a> </li>
         </ul>
       </div>
       <div className='container-image'>

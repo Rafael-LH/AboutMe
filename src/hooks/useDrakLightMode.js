@@ -4,8 +4,6 @@ const useDrakLightMode = () => {
   const [darkMode, setDarkMode] = useState(() => {
     return Number(localStorage.getItem('darkMode')) ? 1 : 0
   });
-  console.log(localStorage.getItem('darkMode'));
-
   const changeMode = (booleanValue) => {
     if (Number(booleanValue)) {
       document.getElementById('element-body').classList.add('dark-mode')

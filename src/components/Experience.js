@@ -2,7 +2,7 @@ import React from 'react'
 
 const Experience = () => (
   <div className='container-experience'>
-    <div className='container-experience__section' id="experience">
+    <div className='container-experience__section' id="information">
       <i className="fas fa-laptop-code"></i>
       <p>
         In actuality I am working in Qualitas from April first 2020

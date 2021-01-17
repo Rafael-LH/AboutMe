@@ -9,7 +9,7 @@ $color-item: #777;
         display: flex;
         justify-content: space-between;
         background-color: #f8f8f8;
-        padding: 10px;
+        padding: 7px 0px 2px;
     }
     .name{
         color: $color-item;
@@ -29,7 +29,6 @@ $color-item: #777;
         height: 95vh;
         overflow: hidden;
         object-fit: cover;
-
         // background-image: url('../images/fondo4.jpg');
         // object-fit: cover;
         // background-attachment: fixed;

@@ -7,7 +7,7 @@ const Systems = ({ name, description, svn_url }) => (
       {description}
     </p>
     <div className="container-btn-show">
-      <a target="__blank" className='btn-show-repo' href={svn_url}>Ver</a>
+      <a target="__blank" className='btn-show-repo' href={svn_url}>Show</a>
     </div>
   </div>
 )
