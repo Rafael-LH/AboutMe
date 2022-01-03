@@ -1,42 +1,42 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = (env, _) => {
-  let mod = env.NODE_ENV;
+module.exports = (_, env) => {
+  let mod = env.mode;
   console.log(mod);
-  let plugins = []
+  let plugins = [];
 
   plugins.push(
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: './index.html'
+      template: "./public/index.html",
+      filename: "./index.html",
     })
   );
 
-  if (mod === 'production') {
+  if (mod === "production") {
     plugins.push(
       new MiniCssExtractPlugin({
-        filename: 'css/[name].css'
+        filename: "css/[name].css",
       })
-    )
+    );
   }
 
   return {
     mode: mod,
     entry: {
-      index: path.resolve(__dirname, './src/index.js')
+      index: path.resolve(__dirname, "./src/index.js"),
     },
     output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'bundle.js',
-      publicPath: '/'
+      path: path.resolve(__dirname, "dist"),
+      filename: "bundle.js",
+      publicPath: "/",
     },
     resolve: {
-      extensions: ['.js', '.jsx']
+      extensions: [".js", ".jsx"],
     },
     devServer: {
-      port: 9000
+      port: 9000,
     },
     module: {
       rules: [
@@ -45,36 +45,41 @@ module.exports = (env, _) => {
           test: /\.(js|jsx)$/,
           exclude: /(node_modules)/,
           use: {
-            loader: 'babel-loader',
+            loader: "babel-loader",
             options: {
-              presets: ['@babel/preset-env', '@babel/preset-react'],
-              plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-transform-runtime']
-            }
-          }
+              presets: ["@babel/preset-env", "@babel/preset-react"],
+              plugins: [
+                "@babel/plugin-proposal-class-properties",
+                "@babel/plugin-transform-runtime",
+              ],
+            },
+          },
         },
         //sass loader
         {
           test: /\.scss$/,
           use: [
-            mod == 'development' ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
-          ]
+            mod == "development" ? "style-loader" : MiniCssExtractPlugin.loader,
+            "css-loader",
+            "sass-loader",
+          ],
         },
         //url loader
         {
           test: /\.(jpg|jpeg|gif|png)$/,
           use: {
-            loader: 'url-loader'
-          }
+            loader: "url-loader",
+          },
         },
         // html-loader
         {
           test: /\.html$/,
           use: {
-            loader: 'html-loader'
-          }
-        }
-      ]
+            loader: "html-loader",
+          },
+        },
+      ],
     },
-    plugins
-  }
-}
+    plugins,
+  };
+};

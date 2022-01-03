@@ -45,6 +45,10 @@
       "skill": "Bootstrap"
     },
     {
+      "class": "blue",
+      "skill": "Material-UI"
+    },
+    {
       "class": "pink",
       "skill": "Styled Components"
     }
