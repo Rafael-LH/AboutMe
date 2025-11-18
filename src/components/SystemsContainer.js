@@ -27,14 +27,14 @@ const SystemsContainer = () => {
       let responseJson = await responseData.json();
 
       (numRep >= fetchResponse.public_repos) ? setShowBtnReset(true) : setBtnMore(true);
-      setData(responseJson);
+      setData(responseJson || []);
       setLoading(false);
       setNumRep(numRep + 7);
 
     } catch (error) {
       setLoading(false);
       setError(true);
-      setMessageErr(`El límite de peticiones a la API de github se ha rebasado, espere una hora por favor.`);
+      setMessageErr("The request limit for the GitHub API has been reached. Please wait an hour to continue.");
       console.log(`Ha ocurrido algun error ${error}`);
     }
   }

@@ -5,17 +5,16 @@ const Experience = () => (
     <div className='container-experience__section' id="information">
       <i className="fas fa-laptop-code"></i>
       <p>
-        In actuality I am working in Qualitas from April first 2020
-        as FullStack JavasCript with experince in ReactJS and NodeJS,
-        graduated from Universidad de Guadalajara ​CUtonalá, student in
-        imac ingles total.
+        Full-Stack JavaScript Developer with experience building fast, intuitive, and scalable web applications.
+        I enjoy turning ideas into functional products using technologies like React, Node.js, and modern JavaScript tools.
       </p>
     </div>
     <div className='container-experience__section'>
       <i className="fas fa-user-tie"></i>
       <p>
-        Dedicated and professional programmer. Excited to find big challenges, always looking optimal and reusable code as possible. I don't never
-        like give up until I resolve problems.
+        Dedicated and professional programmer.
+        I&apos;m excited to take on big challenges and I&apos;m passionate about creating clean designs, strong user experiences, and efficient performance.
+        I never like to give up until I solve a problem.
       </p>
     </div>
   </div>

@@ -4,7 +4,7 @@
   "description": "My skills",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --mode development",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider webpack serve --mode development",
     "prod": "webpack --mode production"
   },
   "repository": {
